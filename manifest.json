@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "aditya extension",
+    "description":"Get a New Joke Everyday",
+    "version": "0.1.1",
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Aditya Extension"
+      },
+    "icons": { "48": "icon48.png"},
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["Content.js"]
+      }
+    ]
+  }
